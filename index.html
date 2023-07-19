@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- DEFAULT -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CEO HTML -->
+    <meta name="author" content="Lesther Xitumul Manuel">
+    <meta property="description" content="This website contains a simple calculator.">
+    <meta name=”robots” content="index, follow">
+    <meta name="keywords" content="html, css, js">
+    <!-- CEO OG -->
+    <meta property="og:title" content="Image Slider | Lesther Xitumul Manuel">
+    <meta property="og:description" content="This website contains a simple calculator.">
+    <meta property="og:image" content="https://cms.involve.me/blog/how-to-create-a-simple-price-calculator-and-capture-more-leads/calculator-L.png">
+    <meta property="og:type" content="website">
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./src/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Calculator | Lesther Xitumul Manuel</title>
+</head>
+<body>
+    <main class="container">
+        <div class="result component">
+            <button class="copy" id="copy">📄</button>
+            <input type="number" value="0" disabled id="result_display">
+        </div>
+        <div class="preview component">
+            <input type="number" class="num-a" id="num_a" autocomplete="off" disabled>
+            <button class="op-prev" id="op_prev" disabled></button>
+            <input type="number" class="num-b" id="num_b" autocomplete="off" disabled>
+        </div>
+        <div class="calculator component">
+            <table class="table">
+                <tr>
+                    <td>
+                        <button class="operation" id="division">%</button>
+                    </td>
+                    <td>
+                        <button class="operation" id="product">/</button>
+                    </td>
+                    <td>
+                        <button class="operation" id="substraction">x</button>
+                    </td>
+                    <td rowspan="2">
+                        <button class="operation" id="substraction">-</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="number" id="seven">7</button>
+                    </td>   
+                    <td>
+                        <button class="number" id="eigth">8</button>
+                    </td>
+                    <td>
+                        <button class="number" id="nine">9</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="number" id="four">4</button>
+                    </td>   
+                    <td>
+                        <button class="number" id="five">5</button>
+                    </td>
+                    <td>
+                        <button class="number" id="six">6</button>
+                    </td>
+                    <td rowspan="2">
+                        <button class="operation" id="addition">+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="number" id="one">1</button>
+                    </td>   
+                    <td>
+                        <button class="number" id="two">2</button>
+                    </td>
+                    <td>
+                        <button class="number" id="three">3</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="number" id="zero">0</button>
+                    </td>   
+                    <td>
+                        <button class="operation" id="clean">AC</button>
+                    </td>
+                    <td>
+                        <button class="operation" id="equal">=</button>
+                    </td>
+                    <td>
+                        <button class="operation" id="point">.</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <script src="./src/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

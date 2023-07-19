@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*Desactivar la selección de texto*/
+    user-select: none;
+    -webkit-user-select: none; /* Para navegadores basados en WebKit */
+    -moz-user-select: none; /* Para navegadores basados en Gecko (como Firefox) */
+    -ms-user-select: none; /* Para navegadores basados en Edge */
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #16161D !important;
+    color: white;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 40%;
+    max-width: 250px !important;
+    background-color: #2E495C;
+    border-radius: 8px;
+}
+
+.component, table{
+    width: 100%;
+}
+
+td{
+    width: 44px;
+    height: 44px;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+input{
+    width: 100%;
+    height: 38px;
+    text-align: right;
+    font-size: 22px !important; 
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+input:focus {
+    outline: 2px solid rgb(235, 230, 230);
+}
+
+.preview{
+    display: flex;
+    justify-content: space-between;
+}
+
+.num-a, .num-b{
+    width: 40%;
+    font-weight: 300;
+}
+
+.op-prev{
+    width: 15%;
+    color: white;
+}
+
+button{
+    width: 100%;
+    border: none;
+    font-size: 22px !important;
+    font-weight: bold;
+    color: rgb(97, 96, 96);
+    border-radius: 4px !important;
+    display: flex;
+    justify-content: center;
+}
+
+table, .result{
+    margin-top: 8px;
+}
+
+.result{
+    margin-bottom: 4px;
+}
+
+.copy{
+    position: absolute;
+    width: auto;
+    height: 37px;
+    display: flex;
+    align-content: center;
+}
+
+#clean{
+    background-color: red !important;
+}
+
+.operation{
+    background-color: rgb(97, 96, 96);
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
